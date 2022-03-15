@@ -1,0 +1,37 @@
+package ex05;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Computer {
+	
+	@Autowired(required=false)
+	@Qualifier("pc")
+	private Mouse mouse;
+	private Keyboard kb;
+	private Monitor monitor;
+	
+	
+	public Computer() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Computer(Mouse mouse, Keyboard kb, Monitor monitor) {
+		super();
+		this.mouse = mouse;
+		this.kb = kb;
+		this.monitor = monitor;
+	}
+	
+	@Autowired(required=false)
+	@Qualifier("pc")
+	public void computerInfo() {
+		System.out.println("***컴퓨터 정보***");
+		mouse.info();
+		kb.info();
+		monitor.info();
+	}
+
+	
+	
+}

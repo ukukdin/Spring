@@ -1,0 +1,32 @@
+package ex04;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Printer {
+	/*
+	 *@Autowired - > 자동주입 타입 -> 이름
+	 */
+	
+	
+	
+	private Document doc;
+	@Autowired
+	public Printer(Document doc) {
+		super();
+		this.doc = doc;
+	}//기본 생성자 만들어야함  없으면 xml파일에 에러가 뜰수있다.(가령 constructor arg를 만들어얗암)
+	
+	public Printer() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Document getDoc() {
+		return doc;
+	}
+
+	public void setDoc(Document doc) {
+		this.doc = doc;
+	}
+	
+	
+}

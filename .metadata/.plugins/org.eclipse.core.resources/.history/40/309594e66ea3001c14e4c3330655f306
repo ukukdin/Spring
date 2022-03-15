@@ -1,0 +1,15 @@
+package ex03;
+
+public class MemberDAO {
+
+	//멤버변수로 private dev
+	private DatabaseDev ds;
+	
+	public void setDs(DatabaseDev ds) {
+		
+		this.ds =ds;
+	}
+	public void getDs() {
+		return ds;
+	}
+}

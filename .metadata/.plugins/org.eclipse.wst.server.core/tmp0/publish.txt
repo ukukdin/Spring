@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Mar 15 18:33:49 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\User\\.m2\\repository\\org\\springframework\\spring-web\\5.2.10.RELEASE\\spring-web-5.2.10.RELEASE.jar=C\:\\Users\\User\\Desktop\\course\\Spring\\apache-tomcat-8.5.76\\wtpwebapps\\SpringMake\\WEB-INF\\lib\\spring-web-5.2.10.RELEASE.jar
+org.eclipse.jst.jee.server\:SpringMake=C\:\\Users\\User\\Desktop\\course\\Spring\\apache-tomcat-8.5.76\\wtpwebapps\\SpringMake

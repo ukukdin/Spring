@@ -1,0 +1,25 @@
+package ex06;
+
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Airplane {
+	
+	@Autowired(required = false)
+	@Qualifier("ap")
+	private Battery batterty;
+	@Autowired(required = false)
+	@Qualifier("ap")
+	private IBattery battery;
+
+	public IBattery getBattery() {
+		return battery;
+	}
+	public void setBattery(IBattery battery) {
+		this.battery = battery;
+	}
+	
+	
+}

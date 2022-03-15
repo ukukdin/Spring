@@ -1,0 +1,14 @@
+package ex04;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		GenericXmlApplicationContext ctx = 
+				new GenericXmlApplicationContext("Autowired-context.xml");
+	Printer pt=ctx.getBean(Printer.class);
+		System.out.println(pt.getDoc().data);
+	}
+}

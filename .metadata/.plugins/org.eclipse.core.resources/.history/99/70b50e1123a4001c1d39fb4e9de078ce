@@ -1,0 +1,29 @@
+package ex07;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import ex01.SpringTest;
+import ex02.Hotel;
+import ex03.DatabaseDev;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		AnnotationConfigApplicationContext atx = 
+				new AnnotationConfigApplicationContext(JavaConfig.class);
+		
+		
+		SpringTest test=atx.getBean(SpringTest.class);
+		test.test();
+		
+		Hotel h =atx.getBean(Hotel.class);
+		h.getChef().cooking();
+		
+		DatabaseDev dv = atx.getBean(DatabaseDev.class);
+		dv.setUid(dev());
+		
+		
+	}
+}
